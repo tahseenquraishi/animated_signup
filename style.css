@@ -1,0 +1,181 @@
+body{
+	/**/
+/*background: #fe4a49;
+background: -moz-linear-gradient(top, #fe4a49 1%, #fe6a6a 100%);
+background: -webkit-linear-gradient(top, #fe4a49 1%,#fe6a6a 100%);
+background: linear-gradient(to bottom, #fe4a49 1%,#fe6a6a 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe4a49', endColorstr='#fe6a6a',GradientType=0 );*/
+background-color: #F8FFE5;
+
+}
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	transition: flex-basis 500ms ease-in-out;
+
+}
+
+.main-container{
+	width: 55%;
+	height: 500px;
+	background-color: #fff;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	box-shadow: 0px 0px 30px #dcdcdc;
+	
+
+
+}
+
+.slide-content{
+	/*background: #379696;*/
+background: #379696;
+background: -moz-linear-gradient(-45deg, #379696 1%, #44baba 36%, #4ed3d3 69%, #58efef 100%);
+background: -webkit-linear-gradient(-45deg, #379696 1%,#44baba 36%,#4ed3d3 69%,#58efef 100%);
+background: linear-gradient(135deg, #379696 1%,#44baba 36%,#4ed3d3 69%,#58efef 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#379696', endColorstr='#58efef',GradientType=1 );
+    width: 50%;
+    height: 100%;
+    box-shadow: 0px 0px 40px rgba(117, 117, 117, 0.42);
+    position: absolute;
+    left: 0px;
+    transition: 600ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        z-index: 100;
+    
+}
+.left-content{
+    width: 50%;
+    height: 100%;
+}
+.right-content,.left-content{
+	width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.wrapper{
+	width: 70%;
+	text-align: center;
+	color: #fff;
+	transition: 1s;
+}
+.wrapper p{
+	margin: 31px 0px;
+}
+.wrapper-2{
+	width: 70%;
+	text-align: center;
+	color: #fff;
+	transition: 1s;
+	display: none;
+}
+.wrapper-2 p{
+	margin: 31px 0px;
+}
+.signin-btn,.signup-btn{
+	background: transparent;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding: 11px 72px;
+    font-size: 13px;
+
+}
+.signup-btn{
+	background: #379696;
+background: -moz-linear-gradient(-45deg, #379696 1%, #44baba 51%, #4ed3d3 100%);
+background: -webkit-linear-gradient(-45deg, #379696 1%,#44baba 51%,#4ed3d3 100%);
+background: linear-gradient(135deg, #379696 1%,#44baba 51%,#4ed3d3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#379696', endColorstr='#4ed3d3',GradientType=1 );
+    color: #fff;
+    margin-top: 3px;
+}
+.signin-btn:hover{
+	background: #fff;
+    color: #379696;
+}
+.right-wrapper{
+    text-align: center;
+    width: 70%;
+}
+.form-control{
+	margin-bottom: 10px;
+    background: #d6ece657;
+    border:none;
+}
+.right-wrapper h2{
+	font-weight: 700;
+	color: #379696;
+}
+.right-wrapper p{
+	margin: 20px 0px;
+    color: #b7b6b6;
+}
+.social{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0px;
+}
+.social-list{
+	    /* display: inline-block; */
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+    /* padding: 7px; */
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px #efefef;
+
+
+}
+
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  color: #969494;
+}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.forgot{
+	color: #636363 !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#one{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 3s, opacity 2s linear;
+
+}
+#two{
+  visibility:visible ;
+  opacity: 1;
+  transition: visibility 3s, opacity 2s linear;
+
+}
